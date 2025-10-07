@@ -1,0 +1,10 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+
+# Jenkins temp
+*@tmp/
+
