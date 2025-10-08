@@ -17,19 +17,7 @@ This demo automates the full lifecycle of Solace brokers:
 
 ## 🧩 Repository Structure
 
-solace-terraform-demo-horse/
-├── local-broker/
-│ ├── main.tf
-│ ├── variables.tf
-│ ├── provider.tf
-│ └── terraform.tfstate
-├── cloud-broker/
-│ ├── main.tf
-│ ├── variables.tf
-│ ├── provider.tf
-│ └── terraform.tfstate
-├── Jenkinsfile
-└── README.md
+<img width="284" height="337" alt="Capture d’écran 2025-10-08 à 12 30 17" src="https://github.com/user-attachments/assets/68dd5973-d39c-497d-ab1a-d4b5a47cb584" />
 
 
 ---
