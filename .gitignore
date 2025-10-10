@@ -31,3 +31,23 @@ bin-release/
 *.ipa
 *.apk
 
+# Jenkins pipeline temp files
+*.log
+*.tmp
+
+# Local Jenkins working directories
+Jenkinsfile.local
+jenkins_home/
+jobs/
+caches/
+
+# Terraform generated files (extra safety)
+*.tfplan
+*.tfstate.backup
+crash.log
+terraform.tfstate
+terraform.tfstate.backup
+
+# Git temporary files
+*.orig
+
