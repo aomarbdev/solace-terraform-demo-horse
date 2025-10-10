@@ -28,9 +28,13 @@ pipeline {
         stage('Trigger Cloud Broker Demo Commit') {
             steps {
                 dir("${REPO_DIR}") {
-                    // Make a dummy empty commit to trigger cloud broker stage
-                    sh 'git commit --allow-empty -m "Trigger Cloud Broker after Local Broker"'
-                    sh 'git push origin main'
+                    sh '''
+                        git config user.email "jenkins@local"
+                        git config user.name "Jenkins"
+                        git pull --rebase origin main || true
+                        git commit --allow-empty -m "Trigger Cloud Broker after Local Broker"
+                        git push origin main
+                    '''
                 }
             }
         }
@@ -66,4 +70,3 @@ pipeline {
         failure { echo '❌ Pipeline failed. Check logs for errors.' }
     }
 }
-
